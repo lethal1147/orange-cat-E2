@@ -4,10 +4,29 @@ import { useState } from "react";
 
 
 export default function Layout({ children }) {
+    const [isLogin, setIsLogin] = useState(true)
+
+    let navbarLayout
+
+    if (!isLogin) {
+        navbarLayout = (
+            <>
+                <HomeNavNotLogin />
+                {children}
+            </>
+        )
+    } if (isLogin) {
+        navbarLayout = (
+            <>
+                <HomeNavLogin />
+                {children}
+            </>
+        )
+    }
+
     return (
         <>
-            <HomeNavNotLogin />
-            {children}
+            {navbarLayout}
         </>
     )
 }

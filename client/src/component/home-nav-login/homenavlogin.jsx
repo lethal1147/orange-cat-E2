@@ -21,9 +21,11 @@ export default function HomeNavLogin() {
                 <li><a href="#how">How it Work</a></li>
             </ul>
 
-            <div className="login-container">
-                <a href="#">Login</a>
-                <a href="#">Sign-up</a>
+            <div className="profile-container">
+                <div className="profile-image">
+                    <img src={image} alt="Orange-cat's logo" />
+                </div>
+                <span onClick={() => setDropdown(!dropdown)} className="profile-username">USERNAME01</span>
             </div>
 
             <span className="dropdown-btn">
@@ -33,11 +35,12 @@ export default function HomeNavLogin() {
 
             {dropdown && <ul className="dropdown-menu">
                 <li><div className="arrow-up"></div></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">BMI</a></li>
                 <li><a href="#">How it Work</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign-up</a></li>
+                <li><a href="#">Logout</a></li>
             </ul>}
         </nav>
     )
