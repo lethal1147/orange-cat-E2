@@ -1,14 +1,15 @@
 import { useState } from 'react'
-import HomePage from "./pages/home/home"
+import Home from './pages/home/home'
+import Layout from './component/layout/layout'
 import { Routes, Route } from 'react-router-dom'
+import HomeNavNotLogin from './component/home-nav-notlogin/homenavnotlogin'
+import "./App.css"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   )
