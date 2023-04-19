@@ -1,32 +1,17 @@
 import HomeNavNotLogin from "../home-nav-notlogin/homenavnotlogin";
 import HomeNavLogin from "../home-nav-login/homenavlogin";
+import MainNav from "../main-nav/mainnav";
 import { useState } from "react";
 
 
 export default function Layout({ children }) {
-    const [isLogin, setIsLogin] = useState(true)
-
-    let navbarLayout
-
-    if (!isLogin) {
-        navbarLayout = (
-            <>
-                <HomeNavNotLogin />
-                {children}
-            </>
-        )
-    } if (isLogin) {
-        navbarLayout = (
-            <>
-                <HomeNavLogin />
-                {children}
-            </>
-        )
-    }
+    // TODO : Add logic to check and display valid navbar
+    // const [isLogin, setIsLogin] = useState(true)
 
     return (
         <>
-            {navbarLayout}
+            <MainNav />
+            {children}
         </>
     )
 }

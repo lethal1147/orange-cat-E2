@@ -12,7 +12,7 @@ export default function HomeNavLogin() {
         <nav className="homeNav">
             <div className="logo-container">
                 <img src={image} alt="Orange-cat's logo" />
-                <span>Orange Cat</span>
+                <span><a href="#">Orange Cat</a></span>
             </div>
 
             <ul className="nav">
@@ -25,7 +25,7 @@ export default function HomeNavLogin() {
                 <div className="profile-image">
                     <img src={image} alt="Orange-cat's logo" />
                 </div>
-                <span onClick={() => setDropdown(!dropdown)} className="profile-username">USERNAME01</span>
+                <span onClick={() => setDropdown(!dropdown)} className="profile-username"><a>USERNAME01</a></span>
             </div>
 
             <span className="dropdown-btn">
