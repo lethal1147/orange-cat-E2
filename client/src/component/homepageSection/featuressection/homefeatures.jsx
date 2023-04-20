@@ -8,12 +8,12 @@ import './homefeatures.css'
 
 export default function HomeFeatures() {
     return (
-        <section className="feature-section">
+        <section id='features' className="feature-section">
             <h2>Features!</h2>
             <div className="feature-card-container">
-            {featuresContent.map((content) => {
+            {featuresContent.map((content, i) => {
                 return (
-                    <div class="feature-card">
+                    <div key={content.title + i} className="feature-card">
                         <img src={content.img} alt={content.title} />
                         <h3>{content.title}</h3>
                         <p>{content.info}</p>
