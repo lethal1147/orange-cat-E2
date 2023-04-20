@@ -1,8 +1,17 @@
+.container {
+    background-color: white;
+    width: 943px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
 .head-sentence {
     text-align: center;
     top: 10px ;
     position: relative;
 }
+
 
 .firsttopic {
     color: #FF7B54;
