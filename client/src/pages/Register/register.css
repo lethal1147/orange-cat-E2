@@ -24,6 +24,7 @@
         flex-flow: column-reverse;
     }
     .register-image {
+        width: 50%;
         margin: 20px;
     }
 }
