@@ -1,10 +1,15 @@
 import './CreateCard.css'
+import Layout from "../../component/layout/layout"
 
 function CreateCard () {
     return (
-        <div className='createcard'>
-            <h1>Create card</h1>
-        </div>
+        <Layout>
+            <div className='head-sentence'>
+                <h1 className='firsttopic'>Create Your Awesome Card</h1>
+                <h2 className='secondtopic'>Did You Meow Today</h2>
+                <h3 className='thirdtopic'>Today's Workout</h3>
+            </div>
+        </Layout>
     )
 }
 
