@@ -1,0 +1,42 @@
+.feature-section {
+    color: black
+}
+
+.feature-section h2 {
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+.feature-card-container {
+    padding: 0 10rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1.5rem 2rem;
+    background-color: white;
+}
+
+.feature-card h3, p {
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    font-weight: 500;
+    text-align: start;
+}
+
+.feature-card img {
+    border-radius: 9999px;
+    border: 1px solid black;
+    width: 65%;
+    margin: 1rem 0;
+}

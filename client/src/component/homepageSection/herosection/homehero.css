@@ -1,4 +1,4 @@
-.hero {
+.hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     background-color: white;
 }
 
-.text-container {
+.hero-text-container {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -16,11 +16,11 @@
     font-weight: 600;
 }
 
-.text-container h1 {
+.hero-text-container h1 {
     font-size: 4rem;
 }
 
-.text-container p {
+.hero-text-container p {
     text-align: start;
     font-size: 1.1rem;
     /* line-height: 1.5rem; */
@@ -44,6 +44,6 @@
     cursor: pointer;
 } 
 
-.image-container {
+.hero-image-container {
     width: 30%;
 }

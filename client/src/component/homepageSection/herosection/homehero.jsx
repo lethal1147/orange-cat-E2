@@ -3,8 +3,8 @@ import "./homehero.css"
 
 export default function HomeHero() {
     return (
-        <section className="hero">
-            <div className="text-container">
+        <section className="hero-section">
+            <div className="hero-text-container">
                 <h1>Make you exercise FUN!</h1>
                 <p>
                     Are you tired of boring workout routines? Do you want to add
@@ -17,7 +17,7 @@ export default function HomeHero() {
                 </p>
                 <button className="hero-btn">Get Started!</button>
             </div>
-            <div className="image-container">
+            <div className="hero-image-container">
                 <img src={hero_image} alt="strong orange-cat"/>
             </div>
         </section>
