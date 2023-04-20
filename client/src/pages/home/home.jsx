@@ -4,6 +4,7 @@ import Layout from "../../component/layout/layout"
 import HomeHero from "../../component/homepageSection/herosection/homehero"
 import HomeFeatures from "../../component/homepageSection/featuressection/homefeatures"
 import Homebmi from "../../component/homepageSection/bmisection/homebmi"
+import Homehow from "../../component/homepageSection/howsection/homehow"
 
 export default function Home() {
     const [bmiInput, setBmiInput] = useState({
@@ -33,6 +34,7 @@ export default function Home() {
             <HomeHero bmiInput={bmiInput} />
             <HomeFeatures />
             <Homebmi onClick={calcBmi} onChange={handlerBmiInput} bmiInput={bmiInput}/>
+            <Homehow />
         </Layout>
     )
 }
