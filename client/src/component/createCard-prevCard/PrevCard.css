@@ -71,3 +71,12 @@ h1 {
     bottom: 0;
     right: 0;
 }
+
+.icon {
+    width: 25px;
+    height: 23px;
+    color: #757577;
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+}
