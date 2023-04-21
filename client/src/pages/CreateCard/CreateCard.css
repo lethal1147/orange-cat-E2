@@ -1,8 +1,10 @@
+
+
 .container {
     background-color: rgb(255, 255, 255);
     width: 943px;
     height: 100%;
-    
+    /* float: right; */
 
 }
 
