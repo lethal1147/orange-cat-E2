@@ -1,7 +1,3 @@
-h1 {
-    color: black;
-}
-
 .prevcard {
     border: 0.5px solid rgb(204, 204, 204);
     border-radius: 20px;
@@ -31,8 +27,8 @@ h1 {
 }
 
 .container-text{
-    border: 1px solid rgb(65, 84, 182);
-    height: 109px;
+    /* border: 1px solid rgb(65, 84, 182); */
+    height: 110px;
     width: 63.6%;
     position: absolute;
     left: 34.7%;
@@ -40,7 +36,7 @@ h1 {
 }
 
 .prevTextbox {
-    border: 1px solid burlywood;
+    /* border: 1px solid burlywood; */
     height: 23px;
     width: 85%; 
     
@@ -65,26 +61,27 @@ h1 {
 }
 
 .prevCaption {
-    margin-top: 6px;
-    border: 1px solid rgb(212, 106, 24);
+    margin-top: 10px;
+    /* border: 1px solid rgb(212, 106, 24); */
     height: 50px;
-    width: 85%;
+    width: 98%;
     right: 0;
-    position: absolute;  
+    position: absolute;
+    overflow-y: scroll;  
 }
 
 .prevDate {
-    border: 1px solid rgb(135, 190, 222);
-    height: 23px;
-    width: 30%;  
+    /* border: 1px solid rgb(135, 190, 222); */
+    height: 18px;
+    width: 40%;  
     position: absolute;
     bottom: 0;
     left: 20%;
 }
 
 .prevDuration {
-    border: 1px solid rgb(158, 135, 222);
-    height: 23px;
+    /* border: 1px solid rgb(158, 135, 222); */
+    height: 18px;
     width: 30%;  
     position: absolute;
     bottom: 0;
@@ -92,11 +89,48 @@ h1 {
 }
 
 .faCalendar {
-    width: 25px;
-    height: 23px;
-    color: #757577;
+    width: 20px;
+    height: 20px;
+    color: #7c7c7c;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 13%;
-    
+}
+
+.title-text {
+    color: #525252;
+    font-size: 25px;
+    position: absolute;
+    top: -4px;
+    text-align: center;
+    width: 100%;
+    font-weight: 550;
+}
+
+.caption-text {
+    color: #525252;
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    font-weight: 500;
+}
+
+.date-text {
+    color: #7c7c7c;
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.duration-text {
+    color: #7c7c7c;
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    text-align: end;
+    font-size: 18px;
+    font-weight: 400;
 }
