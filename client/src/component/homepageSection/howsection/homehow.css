@@ -4,6 +4,7 @@
 }
 
 .how-section h2 {
+    font-size: 3rem;
     padding-bottom: 4rem;
 }
 
@@ -28,11 +29,8 @@
 }
 
 .how-card h3 {
-    padding-bottom: 2rem;
-}
-
-.how-card h3 {
     font-size: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .how-card p {
@@ -44,4 +42,24 @@
 .how-card img {
     width: 75%;
     margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 990px) {
+    .how-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 5rem 3rem;
+    }
+
+    .how-card h3 {
+        font-size: 1.75rem;
+    }
+
+    .how-card img {
+        width: 50%;
+    }
+
+    .how-card p {
+        padding: 0 1rem;
+        font-size: 1.25rem;
+    }
 }
