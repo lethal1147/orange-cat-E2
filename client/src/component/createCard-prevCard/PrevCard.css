@@ -42,11 +42,30 @@ h1 {
 .prevTextbox {
     border: 1px solid burlywood;
     height: 23px;
-    width: 85%;   
+    width: 85%; 
+    
+}
+
+.faPenToSquare {
+    width: 15px;
+    height: 15px;
+    color: #FF7B54;
+    position: absolute;
+    top: 0;
+    right: 7.5%;
+}
+
+.faTrashCan {
+    width: 15px;
+    height: 15px;
+    color: #FF7B54;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .prevCaption {
-    margin-top: 5px;
+    margin-top: 6px;
     border: 1px solid rgb(212, 106, 24);
     height: 50px;
     width: 85%;
@@ -72,11 +91,12 @@ h1 {
     right: 0;
 }
 
-.icon {
+.faCalendar {
     width: 25px;
     height: 23px;
     color: #757577;
     position: absolute;
     bottom: 0;
     left: 13%;
+    
 }
