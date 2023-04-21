@@ -53,3 +53,21 @@ h1 {
     right: 0;
     position: absolute;  
 }
+
+.prevDate {
+    border: 1px solid rgb(135, 190, 222);
+    height: 23px;
+    width: 30%;  
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+.prevDuration {
+    border: 1px solid rgb(158, 135, 222);
+    height: 23px;
+    width: 30%;  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

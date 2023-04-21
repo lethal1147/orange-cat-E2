@@ -1,14 +1,8 @@
-.bg {
-    background-image: url('../../assets/images/createCard/bg_orangcat.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .container {
     background-color: rgb(255, 255, 255);
     width: 943px;
     height: 100%;
-    margin: 0 auto;
+    
 
 }
 

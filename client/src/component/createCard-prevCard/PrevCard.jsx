@@ -9,7 +9,8 @@ function PrevCard() {
             <div className='container-text'>
                 <div className='prevTextbox'></div>
                 <div className='prevCaption'></div>
-
+                <div className='prevDate'></div>
+                <div className='prevDuration'></div>
             </div>
 
             <div className='previewStatus'></div>
