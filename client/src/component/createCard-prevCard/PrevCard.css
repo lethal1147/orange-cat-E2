@@ -1,0 +1,55 @@
+h1 {
+    color: black;
+}
+
+.prevcard {
+    border: 0.5px solid rgb(204, 204, 204);
+    border-radius: 20px;
+    width: 740px;
+    height: 169px;
+    margin: 0 auto;
+    margin-top: 35px;
+    position: relative;
+}
+
+.previewStatus {
+    background-color: rgb(204, 204, 204);
+    height: 20%;
+    border-radius: 0 0 19px 19px;
+    position: relative;
+    top: 80%;
+}
+
+.prevImg {
+    background-color: rgb(112, 137, 107);
+    width: 231px;
+    height: 109px;
+    border-radius: 10%;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+}
+
+.container-text{
+    border: 1px solid rgb(65, 84, 182);
+    height: 109px;
+    width: 63.6%;
+    position: absolute;
+    left: 34.7%;
+    top: 13px;
+}
+
+.prevTextbox {
+    border: 1px solid burlywood;
+    height: 23px;
+    width: 85%;   
+}
+
+.prevCaption {
+    margin-top: 5px;
+    border: 1px solid rgb(212, 106, 24);
+    height: 50px;
+    width: 85%;
+    right: 0;
+    position: absolute;  
+}
