@@ -1,8 +1,7 @@
 import './CreateCard.css'
-import { useState } from 'react'
 import Layout from "../../component/layout/layout"
 import PrevCard from "../../component/createCard-prevCard/PrevCard"
-
+import caiBiceps from "../../assets/images/CreateCard/catBiceps.png"
 
 function CreateCard () {
     
@@ -11,6 +10,12 @@ function CreateCard () {
         <Layout>
         
         <div className='bg'>
+            <div className='sideContainer'>
+                <div className='sideText'>
+                    <h1>Be The <br /> <span className='yellowText'>STRONGEST</span> Cat</h1>
+                </div>
+                <img src={caiBiceps} className='sideIMG'></img>
+            </div>
             <div className='container'>
                 <div className='head-sentence'>
                     <h1 className='firsttopic'>Create Your Awesome Card</h1>

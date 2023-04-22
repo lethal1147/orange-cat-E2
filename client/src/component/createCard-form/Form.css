@@ -239,7 +239,7 @@ input[type="radio"]:checked + .activity-label {
     border: none;
     outline: none;
     /* background: transparent; */
-    color: #a370c5;
+    color: #FF7B54;
     padding: 8px;
     font-weight: 540;
     border-radius: 5px 5px 5px 5px;

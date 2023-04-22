@@ -102,7 +102,7 @@ function PrevCard() {
         // console.log({...inputs})
     }
 
-    console.log(inputs)
+    // console.log(inputs)
 
     return (
         <>
