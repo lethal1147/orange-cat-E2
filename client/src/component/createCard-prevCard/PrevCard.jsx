@@ -13,7 +13,7 @@ import walking from '../../assets/images/CreateCard/walking.png';
 function PrevCard() {
     const [ inputs, setInputs] = useState ({
         title: 'This is title',
-        caption: 'I wish I was a cat, no school, no work, no exercise, just meow meow meow moew meow meow. ',
+        caption: 'I wish I was a cat, no school, no work, no exercise, just meow meow meow meow meow',
         time_start: '',
         time_end: '',
         duration: '',
@@ -57,6 +57,11 @@ function PrevCard() {
 
                     {/* preview duration */}
                     <div className='prevDuration'>
+                        {inputs.type === 'biking' && <img src={biking} className='icon-img'  />} 
+                        {inputs.type === 'running' && <img src={running} className='icon-img'  />}
+                        {inputs.type === 'swimming' && <img src={swimming} className='icon-img'  />}    
+                        {inputs.type === 'cardio' && <img src={cardio} className='icon-img'  />}
+                        {inputs.type === 'walking' && <img src={walking} className='icon-img'  />}
                         <p className='duration-text'>1h 30m</p>
                     </div>
                 </div>

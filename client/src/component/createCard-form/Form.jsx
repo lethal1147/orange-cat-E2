@@ -24,35 +24,35 @@ function Form( {handleChangeInput}) {
                 <p>Activity:</p>
                 <div className='activity-list'>
                     <div className="tile"> 
-                        <input type="radio" value="biking" name="type" id='biking'></input>
+                        <input type="radio" value="biking" name="type" id='biking' onChange={handleChangeInput}></input>
                         <label htmlFor="biking" className='activity-label'>
                             <img src={biking} alt='biking' className='activity-image'/>
                             <h6>Biking</h6>
                         </label>
                     </div>
                     <div className="tile"> 
-                        <input type="radio" value="running" name="type" id='running'></input>
+                        <input type="radio" value="running" name="type" id='running' onChange={handleChangeInput}></input>
                         <label htmlFor="running" className='activity-label'>
                             <img src={running} alt='running' className='activity-image'/>
                             <h6>running</h6>
                         </label>
                     </div>
                     <div className="tile"> 
-                        <input type="radio" value="swimming" name="type" id='swimming'></input>
+                        <input type="radio" value="swimming" name="type" id='swimming' onChange={handleChangeInput}></input>
                         <label htmlFor="swimming" className='activity-label'>
                             <img src={swimming} alt='swimming' className='activity-image'/>
                             <h6>swimming</h6>
                         </label>
                     </div>
                     <div className="tile"> 
-                        <input type="radio" value="cardio" name="type" id='cardio'></input>
+                        <input type="radio" value="cardio" name="type" id='cardio' onChange={handleChangeInput}></input>
                         <label htmlFor="cardio" className='activity-label'>
                             <img src={cardio} alt='cardio' className='activity-image'/>
                             <h6>cardio</h6>
                         </label>
                     </div>
                     <div className="tile"> 
-                        <input type="radio" value="walking" name="type" id='walking'></input>
+                        <input type="radio" value="walking" name="type" id='walking' onChange={handleChangeInput}></input>
                         <label htmlFor="walking" className='activity-label'>
                         <img src={walking} alt='walking' className='activity-image'/>
                             <h6>walking</h6>
@@ -93,7 +93,7 @@ function Form( {handleChangeInput}) {
             </div> 
 
             {/* Add data: Caption */}
-            <textarea id='textbox' placeholder='Add caption:' onChange={handleChangeInput}></textarea>
+            <textarea id='textbox' placeholder='Add caption:' name='caption' onChange={handleChangeInput} ></textarea>
 
             {/* submit button */}
             <input type="submit" value="submit" id="btn-submit"></input>

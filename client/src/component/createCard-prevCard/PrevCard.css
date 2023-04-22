@@ -136,3 +136,11 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -5px;
+    left: 35px;
+}
