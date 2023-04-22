@@ -5,7 +5,7 @@ import swimming from '../../assets/images/CreateCard/swimming.png';
 import cardio from '../../assets/images/CreateCard/cardio.png';
 import walking from '../../assets/images/CreateCard/walking.png';
 
-function Form( {handleChangeInput}) {
+function Form( {handleChangeInput, calcDuration}) {
     return (
         <form>
             <div className='title-date'>
@@ -64,10 +64,10 @@ function Form( {handleChangeInput}) {
             {/* Add data: Duration */}
             <div className='time_duration'>
                 <label htmlFor='time_start'>Time-Start:</label>
-                <input type='time' className='time1'></input>
+                <input type='time' className='time1' name='time_start' onChange={handleChangeInput}></input>
                 <label htmlFor='time-end'className='time2'>Time-End:</label>
-                <input type='time' className='time2'></input>
-                <button>Duration</button>
+                <input type='time' className='time2' name='time_end' onChange={handleChangeInput}></input>
+                <button type='button' onClick={calcDuration}>Duration</button>
             </div>
 
             {/* Add data: Task status */}

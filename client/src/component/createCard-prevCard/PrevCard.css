@@ -135,12 +135,21 @@
     text-align: end;
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: -1px;
 }
 
 .icon-img {
     width: 30px;
     height: 30px;
     position: absolute;
-    bottom: -5px;
-    left: 35px;
+    bottom: -7px;
+    left: 15px;
+}
+
+.icon-img-swimming {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: -9px;
+    left: 10px;
 }
