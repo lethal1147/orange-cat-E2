@@ -5,7 +5,7 @@ import swimming from '../../assets/images/CreateCard/swimming.png';
 import cardio from '../../assets/images/CreateCard/cardio.png';
 import walking from '../../assets/images/CreateCard/walking.png';
 
-function Form( {handleChangeInput, calcDuration}) {
+function Form( {handleChangeInput, calcDuration, changeColor}) {
     return (
         <form>
             <div className='title-date'>
@@ -74,9 +74,9 @@ function Form( {handleChangeInput, calcDuration}) {
             <div className='taskStatus'>
                 <p>Task Status:</p>
                 <div className='wrapper'>
-                    <input type='radio' value='green' name='task' id='complete'></input>
-                    <input type='radio' value='yellow' name='task' id='inProgress'></input>
-                    <input type='radio' value='red' name='task' id='fail'></input>
+                    <input type='radio' value='complete' name='task' id='complete' onClick={(e)=>changeColor(e)}></input>
+                    <input type='radio' value='inProgress' name='task' id='inProgress' onClick={(e)=>changeColor(e)}></input>
+                    <input type='radio' value='fail' name='task' id='fail' onClick={(e)=>changeColor(e)}></input>
                     <label htmlFor='complete' className='option option-1'>
                         <div className='dot dot-1'></div>
                         <span>Missison Complete</span>

@@ -25,19 +25,19 @@ function PrevCard() {
     function calcDuration () {
         let tStart = inputs.time_start;
         let tEnd = inputs.time_end;
-        console.log(tStart, tEnd);
+        // console.log(tStart, tEnd);
     
         //convert timeStart and timeEnd to milliseconds
         let milliseconds1 = Number(tStart.split(':')[0]) * 60 * 60 * 1000 + Number(tStart.split(':')[1]) * 60 * 1000;
         let milliseconds2 = Number(tEnd.split(':')[0]) * 60 * 60 * 1000 + Number(tEnd.split(':')[1]) * 60 * 1000;
-        console.log(milliseconds1, milliseconds2);
+        // console.log(milliseconds1, milliseconds2);
     
         //find differences in milliseconds
         let difference = Math.abs(milliseconds2 - milliseconds1);
         if (milliseconds2 < milliseconds1) {
             difference = 86400000 - difference;
         }
-        console.log(difference)
+        // console.log(difference)
     
         let msec = difference;
                 let hh = Math.floor(msec / 1000 / 60 / 60);
@@ -51,12 +51,12 @@ function PrevCard() {
                 let ss = Math.floor(msec / 1000);
                 msec -= ss * 1000;
     
-                console.log(hh + ":" + mm + ":" + ss);
+                // console.log(hh + ":" + mm + ":" + ss);
     
                 //prepare to display in preview card
                 let displayHour = hh + ' h';
                 let displayMin = mm + ' m'
-                console.log(displayHour, displayMin)
+                // console.log(displayHour, displayMin)
     
                 let hour;
                 let min; 
@@ -77,12 +77,32 @@ function PrevCard() {
                 setInputs({...inputs,duration:calculateDuration})
         }
 
+        let changeColor = (e) => {
+            const color = ['#96d674', '#d6c774', '#d67474']
+            const { name, value } = e.target
+            if (value == 'complete') {
+                //console.log('you click green')
+                setInputs({...inputs,[name]: color[0]})
+            }
+            if (value == 'inProgress') {
+                //console.log('you click yellow')
+                setInputs({...inputs,[name]: color[1]})
+            }
+            if (value == 'fail') {
+                // console.log('you click red')
+                setInputs({...inputs,[name]: color[2]})
+            }
+        }
+
+
     const handleChangeInput = (e) => {
         const { name, value } = e.target
         //console.log({...inputs})
         setInputs({...inputs,[name]: value})
         // console.log({...inputs})
     }
+
+    console.log(inputs)
 
     return (
         <>
@@ -122,10 +142,10 @@ function PrevCard() {
                 </div>
 
                 {/* preview task status */}
-                <div className='previewStatus'></div>
+                <div className='previewStatus' style={{backgroundColor:inputs.task}}></div>
             </div>
 
-            <Form handleChangeInput={handleChangeInput} calcDuration={calcDuration} />
+            <Form handleChangeInput={handleChangeInput} calcDuration={calcDuration} changeColor={changeColor}  />
         </>
     )
 }
