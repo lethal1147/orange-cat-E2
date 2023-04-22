@@ -16,6 +16,31 @@ form {
     gap: 20px;
 }
 
+#title, #date {
+    font-family: 'Sono', sans-serif;
+}
+
+#title {
+    width:  250px;
+    border: none;
+    border-bottom: 1px solid #FF7B54;
+    outline: none;
+    color: #FF7B54;
+}
+
+#date {
+    border: none;
+    border-bottom: 1px solid #FF7B54;
+    outline: none;
+    color: #FF7B54;
+}
+
+#date::-webkit-calendar-picker-indicator {
+    filter: invert(56%) sepia(66%) saturate(1162%) hue-rotate(325deg) brightness(103%) contrast(105%);
+}
+
+
+
 /* --------- activity --------- */
 .activity-container{
     margin-top: 10px;
@@ -113,8 +138,16 @@ input[type="radio"]:checked + .activity-label {
     cursor: pointer;
 }
 
-.time1, .time2 {
+.time {
     font-family: 'Sono', sans-serif;
+    border: none;
+    border-bottom: 1px solid #FF7B54;
+    outline: none;
+    color: #FF7B54;
+}
+
+.time::-webkit-calendar-picker-indicator {
+    filter: invert(56%) sepia(66%) saturate(1162%) hue-rotate(325deg) brightness(103%) contrast(105%);
 }
 
 /* --------- task satus --------- */
@@ -160,7 +193,7 @@ input[type="radio"]:checked + .activity-label {
 }
 
 #inProgress:checked ~ .option-2 {
-    background: #d6c774;
+    background: #fff476;
 }
 
 #fail:checked ~ .option-3 {
@@ -197,7 +230,7 @@ input[type="radio"]:checked + .activity-label {
 }
 
 .dot-2::before{
-    background: #d6c774;
+    background: #fff476;
 }
 
 .dot-3::before{
@@ -246,6 +279,7 @@ input[type="radio"]:checked + .activity-label {
     margin-top: 15px;
     font-family: 'Sono', sans-serif;
     font-weight: 500;
+    border-bottom: 1px solid #FF7B54;
 }
 
 /* submit button */
@@ -260,4 +294,5 @@ input[type="radio"]:checked + .activity-label {
     border: #FF7B54;
     border-radius: 5px;
     cursor: pointer;
+    
 }

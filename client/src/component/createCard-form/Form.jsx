@@ -12,11 +12,11 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
 
                 {/* Add data: Title  */}
                 <label htmlFor='title'>TiTle:</label>
-                <input type="text" placeholder="type anything" name="title" onChange={handleChangeInput} ></input>
+                <input type="text" placeholder="type anything" name="title" id='title' onChange={handleChangeInput} ></input>
 
                 {/* Add data: Date */}
                 <label htmlFor='date'>Date:</label>
-                <input type="date" name="date" onChange={handleChangeInput} ></input>
+                <input type="date" name="date" id='date' onChange={handleChangeInput} ></input>
             </div>
 
             {/* Add data: activity */}
@@ -64,9 +64,9 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
             {/* Add data: Duration */}
             <div className='time_duration'>
                 <label htmlFor='time_start'>Time-Start:</label>
-                <input type='time' className='time1' name='time_start' onChange={handleChangeInput}></input>
+                <input type='time' className='time' name='time_start' onChange={handleChangeInput}></input>
                 <label htmlFor='time-end'className='time2'>Time-End:</label>
-                <input type='time' className='time2' name='time_end' onChange={handleChangeInput}></input>
+                <input type='time' className='time' name='time_end' onChange={handleChangeInput}></input>
                 <button type='button' onClick={calcDuration}>Duration</button>
             </div>
 

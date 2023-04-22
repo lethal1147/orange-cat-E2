@@ -79,7 +79,7 @@ function PrevCard() {
         }
 
         let changeColor = (e) => {
-            const color = ['#96d674', '#d6c774', '#d67474']
+            const color = ['#96d674', '#fff476', '#d67474']
             const { name, value } = e.target
             if (value == 'complete') {
                 //console.log('you click green')

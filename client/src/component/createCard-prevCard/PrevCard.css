@@ -16,8 +16,6 @@
     top: 80%;
 }
 
-
-
 .container-text{
     /* border: 1px solid rgb(65, 84, 182); */
     height: 110px;
@@ -34,6 +32,16 @@
     overflow-y: scroll;
     position: absolute;  
 }
+
+.prevTextbox::-webkit-scrollbar {
+    width: 5px;
+}
+
+.prevTextbox::-webkit-scrollbar-thumb {
+    background-color: #FF7B54;
+    border-radius: 12px;
+}
+
 
 .faPenToSquare {
     width: 15px;
@@ -61,6 +69,15 @@
     right: 0;
     position: absolute;
     overflow-y: scroll;  
+}
+
+.prevCaption::-webkit-scrollbar {
+    width: 5px;
+}
+
+.prevCaption::-webkit-scrollbar-thumb {
+    background-color: #FF7B54;
+    border-radius: 12px;
 }
 
 .prevDate {
