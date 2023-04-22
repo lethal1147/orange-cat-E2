@@ -1,9 +1,12 @@
 import './CreateCard.css'
+import { useState } from 'react'
 import Layout from "../../component/layout/layout"
 import PrevCard from "../../component/createCard-prevCard/PrevCard"
-import Form from "../../component/createCard-form/Form"
+
 
 function CreateCard () {
+    
+    
     return (
         <Layout>
         

@@ -39,7 +39,8 @@
     /* border: 1px solid burlywood; */
     height: 23px;
     width: 85%; 
-    
+    overflow-y: scroll;
+    position: absolute;  
 }
 
 .faPenToSquare {
@@ -61,7 +62,7 @@
 }
 
 .prevCaption {
-    margin-top: 10px;
+    margin-top: 33px;
     /* border: 1px solid rgb(212, 106, 24); */
     height: 50px;
     width: 98%;
@@ -104,7 +105,8 @@
     top: -4px;
     text-align: center;
     width: 100%;
-    font-weight: 550;
+    font-weight: 450;
+    letter-spacing: -2px;
 }
 
 .caption-text {

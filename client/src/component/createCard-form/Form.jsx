@@ -5,17 +5,20 @@ import swimming from '../../assets/images/CreateCard/swimming.png';
 import cardio from '../../assets/images/CreateCard/cardio.png';
 import walking from '../../assets/images/CreateCard/walking.png';
 
-function Form() {
+function Form( {handleChangeInput}) {
     return (
         <form>
             <div className='title-date'>
+
                 {/* Add data: Title  */}
                 <label htmlFor='title'>TiTle:</label>
-                <input type="text" placeholder="type anything" name="title" ></input>
+                <input type="text" placeholder="type anything" name="title" onChange={handleChangeInput} ></input>
+
                 {/* Add data: Date */}
                 <label htmlFor='date'>Date:</label>
                 <input type="date" name="date" ></input>
             </div>
+
             {/* Add data: activity */}
             <div className='activity-container'>
                 <p>Activity:</p>
@@ -57,6 +60,7 @@ function Form() {
                     </div>
                 </div>
             </div>
+
             {/* Add data: Duration */}
             <div className='time_duration'>
                 <label htmlFor='time_start'>Time-Start:</label>
@@ -65,6 +69,7 @@ function Form() {
                 <input type='time' className='time2'></input>
                 <button>Duration</button>
             </div>
+
             {/* Add data: Task status */}
             <div className='taskStatus'>
                 <p>Task Status:</p>
@@ -86,6 +91,7 @@ function Form() {
                     </label>
                 </div>
             </div> 
+
             {/* Add data: Caption */}
             <textarea id='textbox' placeholder='Add caption:'></textarea>
 
