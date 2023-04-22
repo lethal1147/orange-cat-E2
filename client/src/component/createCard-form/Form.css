@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sono:wght@300;400;500;700&display=swap');
 
 form {
-    top: 25px;
+    top: 20px;
     color: black;
     position: relative;
-    border: 1px solid goldenrod;
+    /* border: 1px solid goldenrod; */
     width: 740px;
     margin: 0 auto;
 }
@@ -229,4 +229,35 @@ input[type="radio"]:checked + .activity-label {
 .wrapper #inProgress,
 .wrapper #fail{
     display: none;
+}
+
+/* --------- task satus --------- */
+#textbox {
+    width: 100%;
+    position: relative;
+    /* bottom: 0; */
+    border: none;
+    outline: none;
+    /* background: transparent; */
+    color: #a370c5;
+    padding: 8px;
+    font-weight: 540;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 15px;
+    font-family: 'Sono', sans-serif;
+    font-weight: 500;
+}
+
+/* submit button */
+#btn-submit {
+    position: relative;
+    margin-top: 8px;
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+    padding:  4px 15px;
+    color: white;
+    background-color: #FF7B54;
+    border: #FF7B54;
+    border-radius: 5px;
+    cursor: pointer;
 }

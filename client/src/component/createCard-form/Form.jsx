@@ -85,9 +85,12 @@ function Form() {
                         <span>Missison Failed</span>
                     </label>
                 </div>
-            </div>            
+            </div> 
+            {/* Add data: Caption */}
+            <textarea id='textbox' placeholder='Add caption:'></textarea>
 
-            
+            {/* submit button */}
+            <input type="submit" value="submit" id="btn-submit"></input>
         </form>
     )
 }
