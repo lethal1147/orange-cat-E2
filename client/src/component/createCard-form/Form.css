@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sono:wght@300;400;500;700&display=swap');
+
 form {
     top: 25px;
     color: black;
@@ -14,7 +16,7 @@ form {
     gap: 20px;
 }
 
-/* activity */
+/* --------- activity --------- */
 .activity-container{
     margin-top: 10px;
 }
@@ -82,7 +84,7 @@ input[type="radio"]:hover + label .activity-image {
 }
 
 /* after clicked, border appear */
-input[type="radio"]:checked {
+.tile input[type="radio"]:checked  {
     transform: scale(1.05);
     border: 3px solid orange;
 }
@@ -92,4 +94,139 @@ input[type="radio"]:checked + .activity-label {
     color:orange;
 }
 
+/* --------- duration --------- */
+.time_duration {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
 
+.time_duration button {
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+    padding:  0 15px;
+    color: white;
+    background-color: #FF7B54;
+    border: #FF7B54;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.time1, .time2 {
+    font-family: 'Sono', sans-serif;
+}
+
+/* --------- task satus --------- */
+.taskStatus{
+    margin-top: 15px;
+}
+
+.taskStatus p {
+    text-align: left;
+}
+
+.wrapper {
+    /* background: #fff; */
+    height: 25px;
+    width: 662px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5px;
+    
+    
+}
+
+.wrapper .option{
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    border: 1px solid  lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+/* กดแล้ว ตัวbgในช่องสี่เหลี่ยมของแต่ละช้อยส์จะเปลี่ยนจากสี #fff เป็นสีที่กำหนด */
+#complete:checked ~ .option-1 {
+    background: #96d674;
+}
+
+#inProgress:checked ~ .option-2 {
+    background: #d6c774;
+}
+
+#fail:checked ~ .option-3 {
+    background: #d67474;
+}
+
+.wrapper .option .dot {
+    height: 13px;
+    width: 13px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    bottom: 3%;
+    transition: all 0.3s ease;
+}
+
+/* opacity: ถ้ายังไม่กดอะไรจะตัววงกลมจะไม่แสดงสี */
+/* transition: all 0.3s ease; เวลาเปลี่ยนไปกดอีกปุ่ม ตัว dot จะขัยบ 3 วิ */
+.wrapper .option .dot::before{
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 1.5px;
+    top: 1.5px;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+.dot-1::before{
+    background: #96d674;
+}
+
+.dot-2::before{
+    background: #d6c774;
+}
+
+.dot-3::before{
+    background: #d67474;
+}
+
+/* opacity: 1; = กดเลือกแล้วขึ้นสีในวงกลมช่องนั้น */
+#complete:checked ~ .option-1 .dot::before,
+#inProgress:checked ~ .option-2 .dot::before,
+#fail:checked ~ .option-3 .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wrapper .option span {
+    color: #808080;
+    font-size: 15px;
+}
+
+/* กดแล้วตัวอักษรสีเทาจะกลายเป็นสี #fff */
+#complete:checked ~ .option-1 span,
+#inProgress:checked ~ .option-2 span,
+#fail:checked ~ .option-3 span {
+    color: white;
+}
+
+/* hide input radio button */
+.wrapper #complete,
+.wrapper #inProgress,
+.wrapper #fail{
+    display: none;
+}
