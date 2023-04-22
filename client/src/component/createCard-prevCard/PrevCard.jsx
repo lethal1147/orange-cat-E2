@@ -8,6 +8,7 @@ import running from '../../assets/images/CreateCard/running.png';
 import swimming from '../../assets/images/CreateCard/swimming.png';
 import cardio from '../../assets/images/CreateCard/cardio.png';
 import walking from '../../assets/images/CreateCard/walking.png';
+import Uploader from '../createCard-Uploader/Uploader'
 
 
 function PrevCard() {
@@ -42,12 +43,12 @@ function PrevCard() {
         let msec = difference;
                 let hh = Math.floor(msec / 1000 / 60 / 60);
                 msec -= hh * 1000 * 60 * 60;
-                console.log('hh ' + hh);
-                console.log('hh ' + msec);
+                //console.log('hh ' + hh);
+                //console.log('hh ' + msec);
                 let mm = Math.floor(msec / 1000 / 60);
-                console.log('mm1 ' + mm);
+                //console.log('mm1 ' + mm);
                 msec -= mm * 1000 * 60;
-                console.log('mm2 ' + msec);
+                //console.log('mm2 ' + msec);
                 let ss = Math.floor(msec / 1000);
                 msec -= ss * 1000;
     
@@ -107,7 +108,11 @@ function PrevCard() {
     return (
         <>
             <div className='prevcard'>
-                <div className='prevImg'></div>
+                {/* preview Image */}
+                <div className='prevImg'>
+                    <Uploader />
+                </div>
+                
 
                 {/* preview title */}
                 <div className='container-text'>

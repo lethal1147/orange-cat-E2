@@ -16,15 +16,7 @@
     top: 80%;
 }
 
-.prevImg {
-    background-color: rgb(112, 137, 107);
-    width: 231px;
-    height: 109px;
-    border-radius: 10%;
-    position: absolute;
-    left: 13px;
-    top: 13px;
-}
+
 
 .container-text{
     /* border: 1px solid rgb(65, 84, 182); */
@@ -153,3 +145,23 @@
     bottom: -9px;
     left: 10px;
 }
+
+.icon-upload {
+    position: absolute;
+    left: 38%;
+    top: 30%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.prevImg {
+    background-color: #FF7B54;
+    width: 231px;
+    height: 109px;
+    border-radius: 10%;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+}
+
