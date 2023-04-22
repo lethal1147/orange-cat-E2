@@ -6,6 +6,7 @@ import Form from "../../component/createCard-form/Form"
 function CreateCard () {
     return (
         <Layout>
+        
         <div className='bg'>
             <div className='container'>
                 <div className='head-sentence'>
@@ -19,6 +20,7 @@ function CreateCard () {
 
 
         </div>
+        
         </Layout>
     )
 }

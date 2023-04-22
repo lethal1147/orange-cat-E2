@@ -3,7 +3,9 @@ import './Form.css'
 function Form() {
     return (
         <form>
-            <h1>Form</h1>
+            <label htmlFor='title'>TiTle</label>
+            <input type="text" placeholder="type anything" name="title" ></input>
+            <br />
 
             
         </form>
