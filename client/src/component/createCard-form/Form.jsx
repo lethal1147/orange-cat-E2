@@ -16,7 +16,7 @@ function Form( {handleChangeInput}) {
 
                 {/* Add data: Date */}
                 <label htmlFor='date'>Date:</label>
-                <input type="date" name="date" ></input>
+                <input type="date" name="date" onChange={handleChangeInput} ></input>
             </div>
 
             {/* Add data: activity */}
@@ -93,7 +93,7 @@ function Form( {handleChangeInput}) {
             </div> 
 
             {/* Add data: Caption */}
-            <textarea id='textbox' placeholder='Add caption:'></textarea>
+            <textarea id='textbox' placeholder='Add caption:' onChange={handleChangeInput}></textarea>
 
             {/* submit button */}
             <input type="submit" value="submit" id="btn-submit"></input>
