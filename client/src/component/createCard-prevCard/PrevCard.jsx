@@ -79,7 +79,7 @@ function PrevCard() {
         }
 
         let changeColor = (e) => {
-            const color = ['#96d674', '#fff476', '#d67474']
+            const color = ['#96d674', '#fff476', '#fd8888']
             const { name, value } = e.target
             if (value == 'complete') {
                 //console.log('you click green')
@@ -95,7 +95,6 @@ function PrevCard() {
             }
         }
 
-
     const handleChangeInput = (e) => {
         const { name, value } = e.target
         //console.log({...inputs})
@@ -103,7 +102,7 @@ function PrevCard() {
         // console.log({...inputs})
     }
 
-    // console.log(inputs)
+    //console.log(inputs)
 
     return (
         <>

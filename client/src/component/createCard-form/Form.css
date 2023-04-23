@@ -197,7 +197,7 @@ input[type="radio"]:checked + .activity-label {
 }
 
 #fail:checked ~ .option-3 {
-    background: #d67474;
+    background: #fd8888;
 }
 
 .wrapper .option .dot {
@@ -234,7 +234,7 @@ input[type="radio"]:checked + .activity-label {
 }
 
 .dot-3::before{
-    background: #d67474;
+    background: #fd8888;
 }
 
 /* opacity: 1; = กดเลือกแล้วขึ้นสีในวงกลมช่องนั้น */

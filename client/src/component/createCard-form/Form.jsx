@@ -12,11 +12,11 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
 
                 {/* Add data: Title  */}
                 <label htmlFor='title'>TiTle:</label>
-                <input type="text" placeholder="type anything" name="title" id='title' onChange={handleChangeInput} ></input>
+                <input type="text" placeholder="type your title" name="title" id='title' required onChange={handleChangeInput} ></input>
 
                 {/* Add data: Date */}
                 <label htmlFor='date'>Date:</label>
-                <input type="date" name="date" id='date' onChange={handleChangeInput} ></input>
+                <input type="date" name="date" id='date' onChange={handleChangeInput} required ></input>
             </div>
 
             {/* Add data: activity */}
@@ -24,7 +24,7 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
                 <p>Activity:</p>
                 <div className='activity-list'>
                     <div className="tile"> 
-                        <input type="radio" value="biking" name="type" id='biking' onChange={handleChangeInput}></input>
+                        <input type="radio" value="biking" name="type" id='biking' required onChange={handleChangeInput}></input>
                         <label htmlFor="biking" className='activity-label'>
                             <img src={biking} alt='biking' className='activity-image'/>
                             <h6>Biking</h6>
@@ -64,9 +64,9 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
             {/* Add data: Duration */}
             <div className='time_duration'>
                 <label htmlFor='time_start'>Time-Start:</label>
-                <input type='time' className='time' name='time_start' onChange={handleChangeInput}></input>
+                <input type='time' className='time' name='time_start' onChange={handleChangeInput} required></input>
                 <label htmlFor='time-end'className='time2'>Time-End:</label>
-                <input type='time' className='time' name='time_end' onChange={handleChangeInput}></input>
+                <input type='time' className='time' name='time_end' onChange={handleChangeInput} required></input>
                 <button type='button' onClick={calcDuration}>Duration</button>
             </div>
 
@@ -74,7 +74,7 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
             <div className='taskStatus'>
                 <p>Task Status:</p>
                 <div className='wrapper'>
-                    <input type='radio' value='complete' name='task' id='complete' onClick={(e)=>changeColor(e)}></input>
+                    <input type='radio' value='complete' name='task' id='complete' onClick={(e)=>changeColor(e)} required></input>
                     <input type='radio' value='inProgress' name='task' id='inProgress' onClick={(e)=>changeColor(e)}></input>
                     <input type='radio' value='fail' name='task' id='fail' onClick={(e)=>changeColor(e)}></input>
                     <label htmlFor='complete' className='option option-1'>
@@ -93,7 +93,7 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
             </div> 
 
             {/* Add data: Caption */}
-            <textarea id='textbox' placeholder='Add caption:' name='caption' onChange={handleChangeInput} ></textarea>
+            <textarea id='textbox' placeholder='Add caption:' name='caption' onChange={handleChangeInput} required></textarea>
 
             {/* submit button */}
             <input type="submit" value="submit" id="btn-submit"></input>

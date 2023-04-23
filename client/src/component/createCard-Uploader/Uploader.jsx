@@ -10,14 +10,14 @@ function Uploader() {
     return (
         <main>
             <form className='ImgForm'
-            onClick={() => document.querySelector(".input-field").click()} >
-                <input type="file" accept="image/*" className="input-field" hidden
+            onClick={() => document.querySelector(".input-field").click()}  >
+                <input type="file" accept="image/*" className="input-field" hidden name='image' 
                 onChange={({ target: {files}}) => {
                     files[0] && setFilename(files[0].name)
                     if(files){
                         setImage(URL.createObjectURL(files[0]))
                     }
-                }} ></input>
+                }} required ></input>
 
                 <img src={image} className="img-upload" />
                 <label forhtml="file"><img src={uploadIcon} className="icon-upload" /></label>
