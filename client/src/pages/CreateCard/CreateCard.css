@@ -1,0 +1,71 @@
+.bg {
+    /* border: 1px solid #525252; */
+    width: 1300px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+.sideContainer {
+    width: 400px;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;
+    float: right;
+    background-color: #FF7B54;
+    position: relative;
+}
+
+.sideIMG {
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sideText {
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 120px;
+    right: 10px;
+}
+
+.yellowText {
+    color: #FBFF3D;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    /* float: right; */
+}
+
+.head-sentence {
+    text-align: center;
+    top: 10px ;
+    position: relative;
+}
+
+
+.firsttopic {
+    color: #FF7B54;
+    font-weight: 500px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.secondtopic {
+    color: #525252;
+    font-weight: 700px;
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.thirdtopic {
+    color: #525252;
+    font-weight: 700px;
+    font-size: 25px;
+    margin-top: 8px;
+}
