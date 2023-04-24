@@ -10,7 +10,7 @@ export default function HomeNavNotLogin() {
     const [isLogin, setIsLogin] = useState(false)
     
     const loginContainer = (
-    <div className="login-container">
+    <div className="nav-login-container">
         <a onClick={() => setIsLogin(true)} href="#">Login</a>
         <a href="#">Sign-up</a>
     </div>

@@ -32,11 +32,11 @@ export default function Home() {
 
     return (
         <Layout>
-            <HomeHero bmiInput={bmiInput} />
-            <HomeFeatures />
-            <Homebmi onClick={calcBmi} onChange={handlerBmiInput} bmiInput={bmiInput}/>
-            <Homehow />
-            <Footer />
+                <HomeHero bmiInput={bmiInput} />
+                <HomeFeatures />
+                <Homebmi onClick={calcBmi} onChange={handlerBmiInput} bmiInput={bmiInput}/>
+                <Homehow />
+                <Footer />
         </Layout>
     )
 }

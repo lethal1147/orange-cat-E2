@@ -21,7 +21,7 @@ export default function HomeNavLogin() {
                 <li><a href="#how">How it Work</a></li>
             </ul>
 
-            <div className="profile-container">
+            <div className="nav-profile-container">
                 <div className="profile-image">
                     <img src={image} alt="Orange-cat's logo" />
                 </div>

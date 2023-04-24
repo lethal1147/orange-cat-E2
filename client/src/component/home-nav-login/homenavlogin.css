@@ -21,7 +21,7 @@ Main : #FF7B54
     align-items: center;
 }
 
-ul {
+.homeNav ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -29,24 +29,24 @@ ul {
     font-size: 1.5rem;
 }
 
-li:last-child {
+.homeNav li:last-child {
     word-spacing: -0.4rem;
 }
 
-a {
+.homeNav a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
     position: relative;
 }
 
-a:hover,
-a:active {
+.homeNav a:hover,
+.homeNav a:active {
     color: #FFBDAA;
     transition: all linear 0.15s 0.05s;
 }
 
-a::after {
+.homeNav a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -59,12 +59,12 @@ a::after {
     transition: transform 0.25s ease-out;
 }
 
-a:hover::after {
+.homeNav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.profile-container {
+.nav-profile-container {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -109,6 +109,7 @@ a:hover::after {
     padding: 0.8rem;
     padding-top: 0;
     border-radius: 8px;
+    z-index: 99;
 }
 
 .arrow-up {
@@ -130,7 +131,7 @@ a:hover::after {
         display: none;
     }
 
-    .profile-container {
+    .nav-profile-container {
         display: none;
     }
 

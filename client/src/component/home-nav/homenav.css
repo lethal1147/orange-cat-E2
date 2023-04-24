@@ -12,8 +12,9 @@ Main : #FF7B54
     background-color: #FF7B54;
     font-size: 1.25rem;
     font-weight: 600;
-    position: relative;
-    /* position: sticky; */
+    /* position: relative; */
+    position: sticky;
+    z-index: 10;
 }
 
 .logo-container {
@@ -22,7 +23,7 @@ Main : #FF7B54
     align-items: center;
 }
 
-ul {
+.homeNav ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -30,30 +31,30 @@ ul {
     font-size: 1.5rem;
 }
 
-li:last-child {
+.homeNav li:last-child {
     word-spacing: -0.4rem;
 }
 
-.login-container {
+.nav-login-container {
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
-a {
+.homeNav a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
     position: relative;
 }
 
-a:hover,
-a:active {
+.homeNav a:hover,
+.homeNav a:active {
     color: #FFBDAA;
     transition: all linear 0.15s 0.05s;
 }
 
-a::after {
+.homeNav a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -66,7 +67,7 @@ a::after {
     transition: transform 0.25s ease-out;
 }
 
-a:hover::after {
+.homeNav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -134,7 +135,7 @@ a:hover::after {
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 990px) {
-    .nav, .login-container, .profile-container {
+    .nav, .nav-login-container, .profile-container {
         display: none;
     }
 

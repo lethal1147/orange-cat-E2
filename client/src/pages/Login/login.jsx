@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import LoginBox from "../../component/LoginBox/LoginBox";
 import Cat from "../../assets/images/muscleCat/hero-img.png";
 import "./login.css";
+import Layout from "../../component/layout/layout";
 
 export default function Login() {
     useEffect(() => {
@@ -12,12 +13,11 @@ export default function Login() {
     }, []);
 
     return (
-        <>
-            <h2>Login Page</h2>
+        <Layout>
             <div className="login-page">
                 <LoginBox className="login-box" />
                 <img className="login-image" src={Cat} alt="Muscular Orange Cat" />
             </div>
-        </>
+        </Layout>
     );
 }

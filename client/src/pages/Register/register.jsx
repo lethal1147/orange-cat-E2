@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import RegisterBox from "../../component/RegisterBox/RegisterBox";
 import Cat from "../../assets/images/muscleCat/hero-img.png";
 import "./register.css";
+import Layout from "../../component/layout/layout";
 
 export default function Register() {
     useEffect(() => {
@@ -12,12 +13,11 @@ export default function Register() {
     }, []);
 
     return (
-        <>
-            <h2>Register Page</h2>
+        <Layout>
             <div className="register-page">
                 <RegisterBox className="register-box" />
                 <img className="register-image" src={Cat} alt="Muscular Orange Cat" />
             </div>
-        </>
+        </Layout>
     );
 }

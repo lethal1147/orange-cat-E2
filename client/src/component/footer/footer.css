@@ -33,3 +33,17 @@ Main : #FF7B54
     display: flex;
     gap: 2rem;
 }
+
+.footer li {
+    list-style: none;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer a:hover,
+.footer a:active {
+    color: #FFBDAA;
+    transition: all linear 0.15s 0.05s;
+}

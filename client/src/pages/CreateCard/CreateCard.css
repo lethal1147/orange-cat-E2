@@ -1,9 +1,15 @@
+.create-card-container {
+    /* background-color: antiquewhite; */
+    width: 1440px;
+    height: 900px;
+}
+
 .bg {
     /* border: 1px solid #525252; */
     width: 1300px;
-    height: 700px;
+    height: 800px;
     margin: 0 auto;
-    margin-top: 4%;
+    padding-top: 4rem;
 }
 
 .sideContainer {
@@ -13,6 +19,7 @@
     float: right;
     background-color: #FF7B54;
     position: relative;
+    z-index: 0;
 }
 
 .sideIMG {
