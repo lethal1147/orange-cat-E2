@@ -13,6 +13,7 @@ Main : #FF7B54
     font-size: 1.25rem;
     font-weight: 600;
     position: relative;
+    /* position: sticky; */
 }
 
 .logo-container {
@@ -112,7 +113,7 @@ a:hover::after {
     top: 60px;
     font-size: 0.8rem;
     color: black;
-    background-color: #fff;
+    background-color: #e4e4e4;
     padding: 0.8rem;
     padding-top: 0;
     border-radius: 8px;
@@ -126,7 +127,7 @@ a:hover::after {
     right: 6px;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
-    border-bottom: 9px solid #fff;
+    border-bottom: 9px solid #e4e4e4;
   }
   
 

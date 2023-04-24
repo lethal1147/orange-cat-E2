@@ -1,0 +1,65 @@
+.how-section {
+    padding: 3rem 6rem;
+    color: black;
+}
+
+.how-section h2 {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+}
+
+.how-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    padding: 0 10rem 3rem;
+}
+
+.how-card {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.how-card:hover {
+    transform: translate(10px, -10px);
+    transition: all ease-out 0.5s;
+}
+
+.how-card h3 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.how-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: start;
+}
+
+.how-card img {
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 990px) {
+    .how-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 5rem 3rem;
+    }
+
+    .how-card h3 {
+        font-size: 1.75rem;
+    }
+
+    .how-card img {
+        width: 50%;
+    }
+
+    .how-card p {
+        padding: 0 1rem;
+        font-size: 1.25rem;
+    }
+}

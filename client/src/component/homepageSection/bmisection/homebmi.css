@@ -1,0 +1,88 @@
+.bmi-section {
+    background-color: white;
+    color: black;
+    display: flex;
+    gap: 10rem;
+    padding: 6rem 12rem 3rem;
+}
+
+.bmi-form-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.bmi-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #FF7B54;
+    padding: 2rem;
+    width: 80%;
+    height: 100%;
+    color: white;
+    border-radius: 25px;
+}
+
+.bmi-form h3 {
+    font-size: 2rem;
+}
+
+.bmi-form input {
+    padding: 0.75rem;
+    width: 60%;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+}
+
+.bmi-form input:focus {
+    outline: 4px solid #ff5522;
+}
+
+.bmi-form span {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.bmi-form button {
+    padding: 0.75rem;
+    width: 60%;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: #FF7B54;
+    color: white;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1.25rem;
+}
+
+.bmi-form button:hover,
+.bmi-form button:active {
+    background-color: #ff5522;
+    cursor: pointer;
+    transition: all linear 0.15s;
+}
+
+.bmi-image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 990px) {
+    .bmi-section {
+        padding: 4rem 4rem;
+        gap: 3rem;
+    }
+
+    .bmi-form {
+        padding: 0;
+    }
+
+    .bmi-form-container {
+        width: 50%;
+    }
+}
