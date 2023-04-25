@@ -128,9 +128,9 @@
 
 .date-text {
     color: #7c7c7c;
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: -5px;
+    bottom: 0px;
     text-align: start;
     font-size: 18px;
     font-weight: 400;
@@ -138,9 +138,9 @@
 
 .duration-text {
     color: #7c7c7c;
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: -5px;
+    bottom: 0px;
     text-align: end;
     font-size: 18px;
     font-weight: 400;

@@ -12,7 +12,7 @@ function CreateCard () {
             <div className='bg'>
                 <div className='sideContainer'>
                     <div className='sideText'>
-                        <h1>Be The <br /> <span className='yellowText'>STRONGEST</span> Cat</h1>
+                        <h1 className='greyText'>Be The <br /> <span className='orangeText'>STRONGEST</span> Cat!!!</h1>
                     </div>
                     <img src={caiBiceps} className='sideIMG'></img>
                 </div>
