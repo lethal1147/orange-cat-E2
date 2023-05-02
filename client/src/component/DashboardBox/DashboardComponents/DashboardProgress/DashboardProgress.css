@@ -34,15 +34,15 @@
 }
 
 progress::-moz-progress-bar {
-    background: #FF7B54;
+    background: linear-gradient(to bottom right, #FF7B54, #FFD56B);
 }
 
 progress::-webkit-progress-value {
-    background: #FF7B54;
+    background: linear-gradient(to bottom right, #FF7B54, #FFD56B);
 }
 
 progress {
-    color: #FF7B54;
+    color: linear-gradient(to bottom right, #FF7B54, #FFD56B);
 }
 
 #progress-bar-text {
