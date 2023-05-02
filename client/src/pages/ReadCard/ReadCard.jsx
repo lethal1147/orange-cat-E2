@@ -1,11 +1,20 @@
 import './ReadCard.css';
 import Layout from "../../component/layout/layout"
+import CoverImage from "../../component/readCard-coverImage/CoverImage"
 
 function ReadCard () {
 
     return (
         <Layout>
-            <h1>ReadCard</h1>
+            <main className='bg-readcard'>
+                <div className='cover-image'>
+                    <CoverImage />
+                </div>
+                <div className='quote'>
+                    
+                </div>
+            </main>
+            
         </Layout>
     )
 }
