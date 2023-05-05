@@ -4,6 +4,7 @@ import './DashboardBox.css';
 import DashboardProfile from './DashboardComponents/DashboardProfile/dashboardProfile';
 import DashboardProgress from './DashboardComponents/DashboardProgress/DashboardProgress';
 import DashboardChallenge from './DashboardComponents/DashboardChallenge/DashboardChallenge';
+import DashboardAchievements from './DashboardComponents/DashboardAchievements/DashboardAchievements';
 
 export default function DashboardBox() {
     useEffect(() => {
@@ -15,6 +16,28 @@ export default function DashboardBox() {
 
     return (
         <div className="dashboard-container">
+            <div className="dashboard-column">
+                <div className="dashboard-card">
+                    <DashboardProfile />
+                </div>
+                <div className="dashboard-card">
+                    <DashboardProgress />
+                </div>
+                <div className="dashboard-card">
+                    <DashboardChallenge />
+                </div>
+            </div>
+            <div className="dashboard-column">
+                <div className="dashboard-card">
+                    <DashboardAchievements />
+                </div>
+                <div className="dashboard-card">
+                    <DashboardAchievements />
+                </div>
+                <div className="dashboard-card">
+                    <DashboardAchievements />
+                </div>
+            </div>
             <div className="dashboard-column">
                 <div className="dashboard-card">
                     <DashboardProfile />

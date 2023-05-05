@@ -7,17 +7,26 @@
     background-color: #939b62;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 2.5%;
     margin: 5%;
-    padding: 5%;
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
     justify-content: center;
+    gap: 2%;
+    overflow-x: auto;
+}
+
+.dashboard-column {
+    flex-shrink: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-width: 0;
 }
 
 .dashboard-card {
     width: 100%;
     padding: 20px;
-    margin: 5%;
+    margin: 5% auto;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     background-color: white;
