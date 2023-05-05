@@ -5,14 +5,14 @@
     position: absolute;
 }
 
-.cover-image {
+.r-coverimage {
     width: 100%;
     height: 25%;
     position: relative;
     background-color: darkgray;    
 }
 
-.quote {
+.r-callout {
     border: 1px solid black;
     width: 60%;
     height: 20%;
