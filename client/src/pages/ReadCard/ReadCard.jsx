@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Layout from "../../component/layout/layout";
 import CoverImage from "../../component/readCard-coverImage/CoverImage";
 import CallOut from "../../component/readCard-CallOut/CallOut";
+import SocialMedia from '../../component/readCard-SocialMedia/SocialMedia';
 
 function ReadCard () {
     const [image, setImage] = useState(null);
@@ -24,6 +25,9 @@ function ReadCard () {
                 </div>
                 <div className='r-callout'>
                     <CallOut />
+                </div>
+                <div className='r-socialmedia'>
+                    <SocialMedia />
                 </div>
             </main>
             

@@ -4,6 +4,7 @@ import Picker from '@emoji-mart/react';
 import data from '@emoji-mart/data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceSmile } from '@fortawesome/free-regular-svg-icons'
+
 function CallOut () {
 
     const [ pickerVisible, setPickerVisible ] = useState(false);
