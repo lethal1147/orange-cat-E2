@@ -8,14 +8,14 @@ import SocialMedia from '../../component/readCard-SocialMedia/SocialMedia';
 function ReadCard () {
     const [image, setImage] = useState(null);
     const [filename, setFilename] = useState('no selected file');
-
+    
     const getImage = ({ target: {files}}) => {
         files[0] && setFilename(files[0].name)
             if(files){
                 setImage(URL.createObjectURL(files[0]))
             }
     };
-
+    
 
     return (
         <Layout>

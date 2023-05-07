@@ -5,8 +5,7 @@ import data from '@emoji-mart/data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceSmile } from '@fortawesome/free-regular-svg-icons'
 
-function CallOut () {
-
+function CallOut (  ) {
     const [ pickerVisible, setPickerVisible ] = useState(false);
     const [ currentEmoji, setCurrentEmoji ] = useState(null);
     const [ callOut, setCallout ] = useState('');
@@ -22,9 +21,9 @@ function CallOut () {
 
     const handleChangeCallOut = (e) => {
         const { name, value } = e.target
-        //console.log({...callOut})
+        //console.log(e.target.value)
         setCallout({...callOut,[name]: value})
-        // console.log({...callOut})
+        //console.log({...callOut})
     }
 
     return (

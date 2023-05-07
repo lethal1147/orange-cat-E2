@@ -62,7 +62,9 @@
 
 /* ---- emoji picker ---- */
 .emoji-picker {
-    float: right;
+    right: 60px;
+    z-index: 5;
+    position: fixed;
 }
 
 /* ---- icon ---- */
@@ -84,4 +86,5 @@
     bottom: 0%;
     position: absolute;
     border-radius: 5px;
+    
 }
