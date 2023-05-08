@@ -173,7 +173,7 @@
     background-color: #FF7B54;
     width: 200px;
     height: 109px;
-    border-radius: 10%;
+    border-radius: 15px;
     position: absolute;
     left: 13px;
     top: 13px;
@@ -182,6 +182,6 @@
 .r-img {
     width: 100%;
     height: 100%;
-    border-radius: 10%;
+    border-radius: 15px;
 }
 
