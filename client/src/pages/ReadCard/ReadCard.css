@@ -29,5 +29,19 @@
     margin: 0 auto;
     position: relative;
     margin-top: 10px;
-    
+}
+
+.r-btn-create {
+    position: relative;
+    margin-top: 1.5rem;
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+    font-size:x-large;
+    padding:  10px 25px;
+    color: white;
+    background-color: #FF7B54;
+    border: #FF7B54;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 4rem;
 }

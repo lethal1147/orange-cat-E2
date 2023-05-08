@@ -4,7 +4,14 @@ import Layout from "../../component/layout/layout";
 import CoverImage from "../../component/readCard-coverImage/CoverImage";
 import CallOut from "../../component/readCard-CallOut/CallOut";
 import SocialMedia from '../../component/readCard-SocialMedia/SocialMedia';
-import PrevCard from "../../component/createCard-prevCard/PrevCard"
+import Card from "../../component/readCard-Card/Card";
+// import PrevCard from "../../component/createCard-prevCard/PrevCard"
+
+import biking from '../../assets/images/CreateCard/biking.png';
+import running from '../../assets/images/CreateCard/running.png';
+import swimming from '../../assets/images/CreateCard/swimming.png';
+import cardio from '../../assets/images/CreateCard/cardio.png';
+import walking from '../../assets/images/CreateCard/walking.png';
 
 const cardDatas = [{
         id: 1,
@@ -13,7 +20,8 @@ const cardDatas = [{
         duration: '1 h 30 m',
         date: '2023-03-18',
         task: '',
-        type: ''
+        image: 'https://images.unsplash.com/photo-1501147830916-ce44a6359892?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+        activity: {biking}
     },
     {
         id: 2,
@@ -22,7 +30,8 @@ const cardDatas = [{
         duration: '2 h 10 m',
         date: '2023-04-17',
         task: '',
-        type: ''
+        image: 'https://images.unsplash.com/photo-1621244246296-c6be56267cc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1222&q=80',
+        activity: ''
     },
     {
         id: 3,
@@ -31,7 +40,8 @@ const cardDatas = [{
         duration: ' 30 m',
         date: '2023-03-16',
         task: '',
-        type: ''
+        image: 'https://plus.unsplash.com/premium_photo-1680981143179-8a6cd94d2901?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80',
+        activity: ''
     },
     {
         id: 4,
@@ -40,15 +50,13 @@ const cardDatas = [{
         duration: '1 h 48 m',
         date: '2023-03-07',
         task: '',
-        type: ''
+        image: 'https://images.unsplash.com/photo-1557330359-ffb0deed6163?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        activity: ''
     }
 ]
 
 
 function ReadCard () {
-
-    const [ inputs, setInputs] = useState ([])
-
 
     const [image, setImage] = useState(null);
     const [filename, setFilename] = useState('no selected file');
@@ -74,9 +82,16 @@ function ReadCard () {
                     <SocialMedia />
                 </div>
 
-                {cardDatas.map((ele) => 
+                {/* {cardDatas.map((ele) => 
                     <PrevCard key={ele.id}  inputs={ele} />
+                )} */}
+
+                {cardDatas.map((ele) => 
+                    <Card key={ele.id}  data={ele} />
                 )}
+
+                {/* submit button */}
+                <input type="submit" value="Create new card" className="r-btn-create"></input>
             </main>
             
         </Layout>
