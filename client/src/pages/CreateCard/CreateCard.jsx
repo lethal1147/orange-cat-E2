@@ -18,6 +18,8 @@ function CreateCard () {
         type: ''
     })
 
+    const [ task, setTask ] = useState('');
+
     function calcDuration () {
         let tStart = inputs.time_start;
         let tEnd = inputs.time_end;
@@ -75,18 +77,18 @@ function CreateCard () {
 
         let changeColor = (e) => {
             const color = ['#96d674', '#fff476', '#fd8888']
-            const { name, value } = e.target
+            const { value } = e.target
             if (value == 'complete') {
                 //console.log('you click green')
-                setInputs({...inputs,[name]: color[0]})
+                setTask(color[0])
             }
             if (value == 'inProgress') {
                 //console.log('you click yellow')
-                setInputs({...inputs,[name]: color[1]})
+                setTask(color[1])
             }
             if (value == 'fail') {
                 // console.log('you click red')
-                setInputs({...inputs,[name]: color[2]})
+                setTask(color[2])
             }
         }
 
@@ -100,26 +102,28 @@ function CreateCard () {
     //console.log(inputs)
     return (
         <Layout>
-        <div className='create-card-container'>
-            <div className='bg'>
-                <div className='sideContainer'>
-                    <div className='sideText'>
-                        <h1 className='greyText'>Be The <br /> <span className='orangeText'>STRONGEST</span> Cat!!!</h1>
+            <div className='create-card-container'>
+                <div className='bg'>
+                    <div className='sideContainer'>
+                        <div className='sideText'>
+                            <h1 className='greyText'>Be The <br /> <span className='orangeText'>STRONGEST</span> Cat!!!</h1>
+                        </div>
+                        <img src={caiBiceps} className='sideIMG'></img>
                     </div>
-                    <img src={caiBiceps} className='sideIMG'></img>
-                </div>
-                <div className='container'>
-                    <div className='head-sentence'>
-                        <h1 className='firsttopic'>Create Your Awesome Card</h1>
-                        <h2 className='secondtopic'>Did You Meow Today?</h2>
-                        <h3 className='thirdtopic'>Today's Workout</h3>
+                    <div className='container'>
+                        <div className='head-sentence'>
+                            <h1 className='firsttopic'>Create Your Awesome Card</h1>
+                            <h2 className='secondtopic'>Did You Meow Today?</h2>
+                            <h3 className='thirdtopic'>Today's Workout</h3>
+                        </div>
+                        <PrevCard inputs={inputs} task={task} />
+                        <Form handleChangeInput={handleChangeInput} calcDuration={calcDuration} changeColor={changeColor}  />
+                        {/* submit button */}
+                        <input type="submit" value="submit" className="btn-submit"></input>
                     </div>
-                    <PrevCard inputs={inputs} />
-                    <Form handleChangeInput={handleChangeInput} calcDuration={calcDuration} changeColor={changeColor}  />
                 </div>
             </div>
-        </div>
-        
+            
         </Layout>
     )
 }

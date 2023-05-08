@@ -9,7 +9,7 @@ import walking from '../../assets/images/CreateCard/walking.png';
 import Uploader from '../createCard-Uploader/Uploader'
 
 
-function PrevCard( {inputs} ) {
+function PrevCard( {inputs, task} ) {
 
     return (
         <>
@@ -53,7 +53,7 @@ function PrevCard( {inputs} ) {
                 </div>
 
                 {/* preview task status */}
-                <div className='previewStatus' style={{backgroundColor:inputs.task}}></div>
+                <div className='previewStatus' style={{backgroundColor:task}}></div>
             </div>
 
             
