@@ -5,13 +5,15 @@ import CoverImage from "../../component/readCard-coverImage/CoverImage";
 import CallOut from "../../component/readCard-CallOut/CallOut";
 import SocialMedia from '../../component/readCard-SocialMedia/SocialMedia';
 import Card from "../../component/readCard-Card/Card";
-// import PrevCard from "../../component/createCard-prevCard/PrevCard"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleLeft, faCircleRight } from '@fortawesome/free-regular-svg-icons'
+
 
 import biking from '../../assets/images/CreateCard/biking.png';
 import running from '../../assets/images/CreateCard/running.png';
 import swimming from '../../assets/images/CreateCard/swimming.png';
 import cardio from '../../assets/images/CreateCard/cardio.png';
-import walking from '../../assets/images/CreateCard/walking.png';
+
 
 const cardDatas = [{
         id: 1,
@@ -82,16 +84,19 @@ function ReadCard () {
                     <SocialMedia />
                 </div>
 
-                {/* {cardDatas.map((ele) => 
-                    <PrevCard key={ele.id}  inputs={ele} />
-                )} */}
-
                 {cardDatas.map((ele) => 
                     <Card key={ele.id}  data={ele} />
                 )}
 
                 {/* submit button */}
                 <input type="submit" value="Create new card" className="r-btn-create"></input>
+
+                {/* page */}
+                <div className='r-page'>
+                    <FontAwesomeIcon icon={faCircleLeft} className='faCircle' />
+                    <span>2</span>
+                    <FontAwesomeIcon icon={faCircleRight} className='faCircle' />
+                </div>
             </main>
             
         </Layout>

@@ -53,6 +53,7 @@
     position: absolute;
     top: 0;
     right: 7.5%;
+    cursor: pointer;
 }
 
 .r-faTrashCan {
@@ -62,6 +63,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
 
 .r-prevCaption {

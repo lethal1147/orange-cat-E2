@@ -43,5 +43,26 @@
     border: #FF7B54;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.r-page{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    margin-right: 5%;
+    gap: 40px;
+}
+
+.r-page span{
+    color: #FF7B54;
+    font-size:xx-large;
+}
+
+.faCircle {
+    width: 30px;
+    height: 30px;
+    color: #FF7B54;
     margin-bottom: 4rem;
+    cursor: pointer;
 }
