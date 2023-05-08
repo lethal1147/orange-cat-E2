@@ -1,33 +1,24 @@
-.achievements-container {
+.cards-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    height: 10rem;
+    height: 20rem;
     overflow-x: auto;
 }
 
-.achievements-text {
-    color: black;
-    font-size: 32px;
-    margin-bottom: 0;
-}
-
-.achievement-image {
+.card-image {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10rem;
+    width: 15rem;
     height: 10rem;
     padding: 1rem;
     margin: 1%;
     background-color: #c0c0c0;
-    border-radius: 50%;
-    overflow: hidden;
+    border-radius: 50px;
 }
 
-.achievement-image img {
+.card-image img {
     width: 150%;
     height: auto;
 }

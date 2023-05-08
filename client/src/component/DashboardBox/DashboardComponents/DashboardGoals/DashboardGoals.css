@@ -1,4 +1,4 @@
-.achievements-container {
+.goals-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -8,26 +8,26 @@
     overflow-x: auto;
 }
 
-.achievements-text {
+.goals-text {
     color: black;
     font-size: 32px;
     margin-bottom: 0;
 }
 
-.achievement-image {
+.goal-image {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10rem;
+    width: 15rem;
     height: 10rem;
     padding: 1rem;
     margin: 1%;
     background-color: #c0c0c0;
-    border-radius: 50%;
+    border-radius: 50px;
     overflow: hidden;
 }
 
-.achievement-image img {
+.goal-image img {
     width: 150%;
     height: auto;
 }
