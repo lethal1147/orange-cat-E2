@@ -5,6 +5,7 @@ import Register from './pages/Register/register';
 import CreateCard from './pages/CreateCard/CreateCard';
 import ReadCard from './pages/ReadCard/ReadCard';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Dashboard from './pages/Dashboard/Dashboard';
 import { Routes, Route } from 'react-router-dom'
 import "./App.css"
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="createcard" element={<CreateCard />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="readcard" element={<ReadCard />} />
+        <Route path="dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   )
