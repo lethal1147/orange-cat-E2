@@ -118,8 +118,7 @@ function CreateCard () {
                         </div>
                         <PrevCard inputs={inputs} task={task} />
                         <Form handleChangeInput={handleChangeInput} calcDuration={calcDuration} changeColor={changeColor}  />
-                        {/* submit button */}
-                        <input type="submit" value="submit" className="btn-submit"></input>
+                        
                     </div>
                 </div>
             </div>

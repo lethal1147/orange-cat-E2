@@ -283,3 +283,19 @@ input[type="radio"]:checked + .activity-label {
     resize: none;
 }
 
+
+/* submit button */
+.btn-submit {
+    position: relative;
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    padding:  4px 15px;
+    color: white;
+    background-color: #FF7B54;
+    border: #FF7B54;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+

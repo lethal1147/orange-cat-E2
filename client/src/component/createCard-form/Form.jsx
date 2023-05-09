@@ -94,6 +94,9 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
 
             {/* Add data: Caption */}
             <textarea id='textbox' placeholder='Add caption:' name='caption' onChange={handleChangeInput} required></textarea>
+
+            {/* submit button */}
+            <input type="submit" value="submit" className="btn-submit"></input>
         </form>
     )
 }
