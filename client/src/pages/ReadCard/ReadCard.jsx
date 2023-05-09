@@ -60,13 +60,13 @@ const cardDatas = [{
 
 function ReadCard () {
 
-    const [image, setImage] = useState(null);
+    const [cover, setCover] = useState(null);
     const [filename, setFilename] = useState('no selected file');
     
-    const getImage = ({ target: {files}}) => {
+    const getCover = ({ target: {files}}) => {
         files[0] && setFilename(files[0].name)
             if(files){
-                setImage(URL.createObjectURL(files[0]))
+                setCover(URL.createObjectURL(files[0]))
             }
     };
     
@@ -75,7 +75,7 @@ function ReadCard () {
         <Layout>
             <main className='bg-readcard'>
                 <div className='r-coverimage'>
-                    <CoverImage image={image} getImage={getImage} />
+                    <CoverImage cover={cover} getCover={getCover} />
                 </div>
                 <div className='r-callout'>
                     <CallOut />
