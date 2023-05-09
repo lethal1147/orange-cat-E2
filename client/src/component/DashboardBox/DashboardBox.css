@@ -1,5 +1,4 @@
 .dashboard-body {
-    justify-content: center;
     background-image: linear-gradient(to bottom right, #FF7B54, #FFD56B);
 }
 
@@ -10,17 +9,14 @@
     padding: 2.5%;
     margin: 5%;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2%;
-    overflow-x: auto;
 }
 
 .dashboard-column {
-    flex-shrink: 1;
     padding: 1rem;
-    box-sizing: border-box;
-    min-width: 0;
+    width: 24rem;
 }
 
 .dashboard-card {
