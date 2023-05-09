@@ -23,12 +23,12 @@
 
 .friend-image img {
     width: 150%;
-    height: auto;
 }
 
 .friend-profile h3 {
-    font-size: 150%;
+    font-size: 100%;
     font-weight: bold;
     margin-left: 25px;
     color: black;
+    overflow: auto;
 }
