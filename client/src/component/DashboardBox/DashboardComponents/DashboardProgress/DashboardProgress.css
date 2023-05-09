@@ -1,8 +1,13 @@
+.progress-container {
+    height: 20rem;
+}
+
 .progress-text {
     color: black;
 }
 
 .progress-img {
+    width: 40%;
     border-radius: 50%;
 }
 

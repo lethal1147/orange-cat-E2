@@ -25,7 +25,7 @@ export default function DashboardAchievements() {
 
     return (
         <div>
-            <h2 className="progress-text" id="progress-text-title">Achievements</h2>
+            <h2 className="achievements-text">Achievements</h2>
             <div className="achievements-container">
                 {achievementsMockData.map((achievement, index) => (
                     <div key={index} className="achievement-image">

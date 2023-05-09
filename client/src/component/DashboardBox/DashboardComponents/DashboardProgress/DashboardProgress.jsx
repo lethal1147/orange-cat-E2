@@ -5,7 +5,7 @@ export default function DashboardProgress() {
     const progress = 70;
 
     return (
-        <div>
+        <div className="progress-container">
             <h2 className="progress-text" id="progress-text-title">Silver</h2>
             <img className="progress-img" id="top-medal" src="https://via.placeholder.com/150x150.png?text=Silver+Medal" alt="Silver Medal" />
             <p className="progress-text" id="progress-text-next">Next to GOLD!</p>
