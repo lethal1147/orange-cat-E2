@@ -34,7 +34,7 @@
     transform: rotateZ(45deg);
     position: absolute;
     top: 120px;
-    right: 10px;
+    right: -10px;
 }
 
 .orangeText {
