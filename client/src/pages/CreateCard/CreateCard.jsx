@@ -1,9 +1,11 @@
-import './CreateCard.css'
-import { useState } from 'react'
-import Layout from "../../component/layout/layout"
-import PrevCard from "../../component/createCard-prevCard/PrevCard"
-import caiBiceps from "../../assets/images/CreateCard/catBiceps.png"
-import Form from '../../component/createCard-form/Form'
+import './CreateCard.css';
+import { useState } from 'react';
+import Layout from "../../component/layout/layout";
+import PrevCard from "../../component/createCard-prevCard/PrevCard";
+import catBiceps from "../../assets/images/CreateCard/catBiceps.png";
+import Form from '../../component/createCard-form/Form';
+// import catBG from "../../assets/images/CreateCard/bg_orangcat.jpg";
+
 
 function CreateCard () {
     
@@ -15,10 +17,13 @@ function CreateCard () {
         duration: '1 h 30 m',
         date: '2023-03-18',
         task: '',
-        type: ''
+        type: '',
+        img: ''
     })
 
     const [ task, setTask ] = useState('');
+    const [ image, setImage ] = useState(null);
+    const [filename, setFilename] = useState('no selected file');
 
     function calcDuration () {
         let tStart = inputs.time_start;
@@ -95,11 +100,22 @@ function CreateCard () {
     const handleChangeInput = (e) => {
         const { name, value } = e.target
         //console.log({...inputs})
-        setInputs({...inputs,[name]: value})
-        // console.log({...inputs})
+        setInputs((prevInputs) => ({...prevInputs,[name]: value}));
     }
 
-    //console.log(inputs)
+    console.log(inputs)
+
+    function handleFileChange(e) {
+        const { files } = e.target;
+        if (files && files[0]) {
+            const file = files[0];
+            setFilename(file.name);
+            setImage(URL.createObjectURL(file));
+            handleChangeInput({target: {name: 'img', value: file}});
+            }
+        }
+
+
     return (
         <Layout>
             <div className='create-card-container'>
@@ -108,7 +124,7 @@ function CreateCard () {
                         <div className='sideText'>
                             <h1 className='greyText'>Be The <br /> <span className='orangeText'>STRONGEST</span> Cat!!!</h1>
                         </div>
-                        <img src={caiBiceps} className='sideIMG'></img>
+                        <img src={catBiceps} className='sideIMG'></img>
                     </div>
                     <div className='container'>
                         <div className='head-sentence'>
@@ -116,7 +132,7 @@ function CreateCard () {
                             <h2 className='secondtopic'>Did You Meow Today?</h2>
                             <h3 className='thirdtopic'>Today's Workout</h3>
                         </div>
-                        <PrevCard inputs={inputs} task={task} />
+                        <PrevCard inputs={inputs} image={image} handleFileChange={handleFileChange} task={task} handleChangeInput={handleChangeInput} />
                         <Form handleChangeInput={handleChangeInput} calcDuration={calcDuration} changeColor={changeColor}  />
                         
                     </div>

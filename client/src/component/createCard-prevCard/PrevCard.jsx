@@ -9,14 +9,14 @@ import walking from '../../assets/images/CreateCard/walking.png';
 import Uploader from '../createCard-Uploader/Uploader'
 
 
-function PrevCard( {inputs, task} ) {
+function PrevCard( {inputs, task, image, handleFileChange} ) {
 
     return (
         <>
             <div className='prevcard'>
                 {/* preview Image */}
                 <div className='prevImg'>
-                    <Uploader />
+                    <Uploader image={image} handleFileChange={handleFileChange} />
                 </div>
                 
 

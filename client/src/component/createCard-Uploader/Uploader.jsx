@@ -1,26 +1,22 @@
 import './Uploader.css'
-import { useState } from 'react'
 import uploadIcon from '../../assets/images/CreateCard/uploadIcon.png';
 
 
-function Uploader() {
-    const [image, setImage] = useState(null);
-    const [filename, setFilename] = useState('no selected file');
+function Uploader( { image, handleFileChange } ) {
+    
+
+    // console.log({image})
 
     return (
-        <main>
+        <main className='upload-container'>
             <form className='ImgForm'
             onClick={() => document.querySelector(".input-field").click()}  >
-                <input type="file" accept="image/*" className="input-field" hidden name='image' 
-                onChange={({ target: {files}}) => {
-                    files[0] && setFilename(files[0].name)
-                    if(files){
-                        setImage(URL.createObjectURL(files[0]))
-                    }
-                }} required ></input>
+                <input type="file" accept="image/*" className="input-field" hidden name='img' 
+                onChange={handleFileChange} required ></input>
 
-                <img src={image} className="img-upload" />
-                <label forhtml="file"><img src={uploadIcon} className="icon-upload" /></label>
+                <img src={image} className="img-upload" name='img' />
+                <label forhtml="file" className="label-upload" ><img src={uploadIcon} className="icon-upload" /></label>
+                <p>choose Image</p>
                 
 
                 

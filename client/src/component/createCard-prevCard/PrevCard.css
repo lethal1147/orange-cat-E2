@@ -173,12 +173,15 @@
 }
 
 .prevImg {
-    background-color: #FF7B54;
+    /* background-color: #FF7B54; */
+    background-image: url('../../assets/images/CreateCard/bg_orangcat.jpg');
+    background-size: cover ;
     width: 231px;
     height: 109px;
     border-radius: 10%;
     position: absolute;
     left: 13px;
     top: 13px;
+    
 }
 
