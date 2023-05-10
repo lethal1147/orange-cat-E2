@@ -1,11 +1,9 @@
-import './CreateCard.css';
-import { useState } from 'react';
-import Layout from "../../component/layout/layout";
-import PrevCard from "../../component/createCard-prevCard/PrevCard";
-import catBiceps from "../../assets/images/CreateCard/catBiceps.png";
-import Form from '../../component/createCard-form/Form';
-// import catBG from "../../assets/images/CreateCard/bg_orangcat.jpg";
-
+import './CreateCard.css'
+import { useState } from 'react'
+import Layout from "../../component/layout/layout"
+import PrevCard from "../../component/createCard-prevCard/PrevCard"
+import Form from '../../component/createCard-form/Form'
+import SideContainer from '../../component/editCard-sideContainer/SideContainer'
 
 function CreateCard () {
     
@@ -119,12 +117,7 @@ function CreateCard () {
         <Layout>
             <div className='create-card-container'>
                 <div className='bg'>
-                    <div className='sideContainer'>
-                        <div className='sideText'>
-                            <h1 className='greyText'>Be The <br /> <span className='orangeText'>STRONGEST</span> Cat!!!</h1>
-                        </div>
-                        <img src={catBiceps} className='sideIMG'></img>
-                    </div>
+                  <SideContainer />
                     <div className='container'>
                         <div className='head-sentence'>
                             <h1 className='firsttopic'>Create Your Awesome Card</h1>
