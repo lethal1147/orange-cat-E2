@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin: 4rem;
 }
 
 .register-box {
@@ -15,8 +15,8 @@
 }
 
 .register-image {
-    margin-left: 75px;
-    width: 50%;
+    margin-left: 20px;
+    width: 40%;
     height: auto;
 }
 
