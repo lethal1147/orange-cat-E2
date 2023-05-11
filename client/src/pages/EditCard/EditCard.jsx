@@ -1,27 +1,27 @@
-import './CreateCard.css'
-import { useState } from 'react'
-import Layout from "../../component/layout/layout"
-import PrevCard from "../../component/createCard-prevCard/PrevCard"
-import Form from '../../component/createCard-form/Form'
-import SideContainer from '../../component/editCard-sideContainer/SideContainer'
+import { useState } from "react";
+import Layout from "../../component/layout/layout";
+import SideContainer from "../../component/editCard-sideContainer/SideContainer";
+import EditPrevCard from "../../component/editCard/EditPrevCard";
+import EditForm from "../../component/editCard/EditForm"
 
-function CreateCard () {
-    
+function EditCard() {
+
     const [ task, setTask ] = useState('');
     const [ image, setImage ] = useState(null);
     const [filename, setFilename] = useState('no selected file');
     const [ inputs, setInputs] = useState ({
-        title: 'This is title',
-        caption: 'I wish I was a cat, no school, no work, no exercise, just meow meow meow meow meow',
+        title: `wait for get user's data`,
+        caption: `wait for get user's data`,
         time_start: '',
         time_end: '',
-        duration: '1 h 30 m',
-        date: '2023-03-18',
+        duration: '',
+        date: '',
         task: '',
         type: '',
         img: ''
     })
-    
+
+
     function calcDuration () {
         let tStart = inputs.time_start;
         let tEnd = inputs.time_end;
@@ -112,27 +112,26 @@ function CreateCard () {
             }
         }
 
-
-    return (
-        <Layout>
-            <div className='create-card-container'>
-                <div className='bg'>
-                  <SideContainer />
-                    <div className='container'>
-                        <div className='head-sentence'>
-                            <h1 className='firsttopic'>Create Your Awesome Card</h1>
-                            <h2 className='secondtopic'>Did You Meow Today?</h2>
-                            <h3 className='thirdtopic'>Today's Workout</h3>
-                        </div>
-                        <PrevCard inputs={inputs} image={image} handleFileChange={handleFileChange} task={task} handleChangeInput={handleChangeInput} />
-                        <Form handleChangeInput={handleChangeInput} calcDuration={calcDuration} changeColor={changeColor}  />
-                        
-                    </div>
-                </div>
+  return (
+    <Layout>
+      <div className="create-card-container">
+        <div className="bg">
+          <SideContainer />
+          <div className="container">
+            <div className="head-sentence">
+              <h1 className="firsttopic">Edit Your Awesome Card</h1>
+              <h2 className="secondtopic">Did You Meow Today?</h2>
+              <h3 className="thirdtopic">Today's Workout</h3>
             </div>
-            
-        </Layout>
-    )
+            {/* card */}
+            <EditPrevCard inputs={inputs} image={image} handleFileChange={handleFileChange} task={task} handleChangeInput={handleChangeInput} />
+            {/* form */}
+            <EditForm handleChangeInput={handleChangeInput} calcDuration={calcDuration} changeColor={changeColor} />
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
 }
 
-export default CreateCard
+export default EditCard;

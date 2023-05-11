@@ -1,4 +1,3 @@
-import './Form.css'
 import biking from '../../assets/images/CreateCard/biking.png';
 import running from '../../assets/images/CreateCard/running.png';
 import swimming from '../../assets/images/CreateCard/swimming.png';
@@ -7,6 +6,7 @@ import walking from '../../assets/images/CreateCard/walking.png';
 
 function Form( {handleChangeInput, calcDuration, changeColor}) {
     return (
+        <>
         <form>
             <div className='title-date'>
 
@@ -96,8 +96,11 @@ function Form( {handleChangeInput, calcDuration, changeColor}) {
             <textarea id='textbox' placeholder='Add caption:' name='caption' onChange={handleChangeInput} required></textarea>
 
             {/* submit button */}
-            <input type="submit" value="Submit" className="btn-submit"></input>
+            <input type="submit" value="Save" className="btn-save"></input>
+            
         </form>
+            <button value="cancel" className="btn-cancel">cancel</button>
+        </>
     )
 }
 
