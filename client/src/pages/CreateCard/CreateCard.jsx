@@ -9,6 +9,9 @@ import Form from '../../component/createCard-form/Form';
 
 function CreateCard () {
     
+    const [ task, setTask ] = useState('');
+    const [ image, setImage ] = useState(null);
+    const [filename, setFilename] = useState('no selected file');
     const [ inputs, setInputs] = useState ({
         title: 'This is title',
         caption: 'I wish I was a cat, no school, no work, no exercise, just meow meow meow meow meow',
@@ -20,11 +23,7 @@ function CreateCard () {
         type: '',
         img: ''
     })
-
-    const [ task, setTask ] = useState('');
-    const [ image, setImage ] = useState(null);
-    const [filename, setFilename] = useState('no selected file');
-
+    
     function calcDuration () {
         let tStart = inputs.time_start;
         let tEnd = inputs.time_end;
@@ -105,7 +104,7 @@ function CreateCard () {
 
     console.log(inputs)
 
-    function handleFileChange(e) {
+    function handleFileChange (e) {
         const { files } = e.target;
         if (files && files[0]) {
             const file = files[0];
