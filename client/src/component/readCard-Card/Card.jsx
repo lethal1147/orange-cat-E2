@@ -42,11 +42,11 @@ function Card( {data} ) {
 
                     {/* preview duration */}
                     <div className='r-prevDuration'>
-                        {/* {data.type === 'biking' && <img src={biking} className='r-icon-img'  />} 
-                        {data.type === 'running' && <img src={running} className='r-icon-img'  />}
-                        {data.type === 'swimming' && <img src={swimming} className='r-icon-img-swimming'  />}    
-                        {data.type === 'cardio' && <img src={cardio} className='r-icon-img'  />}
-                        {data.type === 'walking' && <img src={walking} className='r-icon-img'  />} */}
+                        {/* {data.activity === 'biking' && <img src={biking} className='r-icon-img'  />} 
+                        {data.activity === 'running' && <img src={running} className='r-icon-img'  />}
+                        {data.activity === 'swimming' && <img src={swimming} className='r-icon-img-swimming'  />}    
+                        {data.activity === 'cardio' && <img src={cardio} className='r-icon-img'  />}
+                        {data.activity === 'walking' && <img src={walking} className='r-icon-img'  />} */}
                         <img src={data.activity} className='r-activity' />
                         <p className='r-duration-text'>{data.duration}</p>
                     </div>

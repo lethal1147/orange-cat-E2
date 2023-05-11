@@ -62,23 +62,51 @@ function ReadCard () {
 
     const [cover, setCover] = useState(null);
     const [filename, setFilename] = useState('no selected file');
+    const [ pickerVisible, setPickerVisible ] = useState(false);
+    const [ currentEmoji, setCurrentEmoji ] = useState(null);
+    const [rcInputs, setRcInputs] = useState({
+        quote : '',
+        emoji : '',
+        cover : ''
+    })
     
-    const getCover = ({ target: {files}}) => {
-        files[0] && setFilename(files[0].name)
-            if(files){
-                setCover(URL.createObjectURL(files[0]))
+    const showPicker = () => {
+        setPickerVisible(!pickerVisible);
+    }
+
+    const pickEmoji = (e) => {
+        setCurrentEmoji(e.native);
+        setPickerVisible(!pickerVisible);
+        setRcInputs((prevRcInputs) => ({ ...prevRcInputs, emoji: e.native }));
+    }
+    
+    const handleChangeInput = (e) => {
+        const { name, value } = e.target
+        //console.log(e.target.value)
+        setRcInputs((prevRcInputs) => ({...prevRcInputs,[name]: value}));
+        //console.log({...callOut})
+    }
+    console.log(rcInputs)
+
+    function handleFileChange (e) {
+        const { files } = e.target;
+        if (files && files[0]) {
+            const file = files[0];
+            setFilename(file.name);
+            setCover(URL.createObjectURL(file));
+            handleChangeInput({target: {name: 'cover', value: file}});
             }
-    };
+        }
     
 
     return (
         <Layout>
             <main className='bg-readcard'>
                 <div className='r-coverimage'>
-                    <CoverImage cover={cover} getCover={getCover} />
+                    <CoverImage cover={cover} handleFileChange={handleFileChange} />
                 </div>
                 <div className='r-callout'>
-                    <CallOut />
+                    <CallOut handleChangeInput={handleChangeInput} showPicker={showPicker} pickEmoji={pickEmoji} pickerVisible={pickerVisible} currentEmoji={currentEmoji}/>
                 </div>
                 <div className='r-socialmedia'>
                     <SocialMedia />
@@ -101,6 +129,10 @@ function ReadCard () {
             
         </Layout>
     )
+
 }
+
+    
+
 
 export default ReadCard;
